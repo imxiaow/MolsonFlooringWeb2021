@@ -1,12 +1,108 @@
 {% extends 'localdesign/main.html' %}
 {% load static %}
 
+<link rel="stylesheet" type="text/css" href="{% static 'css/homepage.css' %}">
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 
 {% block content %}
 
+<section class="home-landing-sec1">
+    <div class="home-sec1-textbox"></div>
+        <h1>Speciality<br>Flooring<br>Products</h1>
+        <p>Molson brings extraordinary flooring, distinctive stairs and unique features.<br>
+            Each piece of our product has it own story that started long before it get to us. 
+        </p>
+        <a href="{% url 'contact' %}" class="button button-accent"> Contact us</a>
+    </div>
+
+</section>  
 
 
-<h1>test</h1>
-<h3>done setup</h3>
+
+<section class="home-landing-sec2-products">
+    <div class="home-sec2-textbox">
+        <h1>
+            Bring our product<br>home with joy.
+        </h1>
+    </div>
+
+    <div class="home-sec2-images">
+        <img src="{% static 'image/hardwood.jpg' %}" alt="" class="">
+        <div class="home-sec2-image-text">
+            <h3 class="product_name">Hardwood Flooring</h3>
+        </div>
+
+        <img src="{% static 'image/Engineered_Hardwood_Flooring.jpg' %}" alt="" class="">
+        <div class="home-sec2-image-text">
+            <h3 class="product_name">Engineered Hardwood Flooring</h3>
+        </div>
+
+        <img src="{% static 'image/Laminate_Flooring.jpg' %}" alt="" class="">
+        <div class="home-sec2-image-text">
+            <h3 class="product_name">Laminate Flooring </h3>
+        </div>
+
+        <img src="{% static 'image/Vinyl_Flooring .jpg' %}" alt="" class="">
+        <div class="home-sec2-image-text">
+            <h3 class="product_name">Vinyl Flooring </h3>
+        </div>
+
+        <img src="{% static 'image/tile.jpg' %}" alt="" class="">
+        <div class="home-sec2-image-text">
+            <h3 class="product_name">Tiles</h3>
+        </div>
+
+        <img src="{% static 'image/stair.jpg' %}" alt="" class="">
+        <div class="home-sec2-image-text">
+            <h3 class="product_name">Stairs</h3>
+        </div>
+
+        <img src="{% static 'image/moulding&trim.jpg' %}" alt="" class="">
+        <div class="home-sec2-image-text">
+            <h3 class="product_name">Moulding&Trim</h3>
+        </div>
+
+        <img src="{% static 'image/accessories.jpg' %}" alt="" class="">
+        <div class="home-sec2-image-text">
+            <h3 class="product_name">Accessories</h3>
+        </div>
+
+    </div>
+
+
+</section>  
+
+
+
+
+<section class="home-landing-sec3-services">
+    <div class="home-sec3-textbox">
+        <h1>
+            Choose the best<br>service.
+        </h1>
+    </div>
+
+    <div class="home-sec3-images">
+        <img src="{% static 'image/freeQuotation.jpg' %}" alt="" class="">
+        <div class="home-sec3-image-text">
+            <h3 class="product_name">Free Quotation</h3>
+        </div>
+
+        <img src="{% static 'image/flooring&stair_installation.jpg' %}" alt="" class="">
+        <div class="home-sec3-image-text">
+            <h3 class="product_name">Floor&Stair Installation </h3>
+        </div>
+
+        <img src="{% static 'image/otherRenovation.jpg' %}" alt="" class="">
+        <div class="home-sec3-image-text">
+            <h3 class="product_name">Other Renovation</h3>
+        </div>
+
+    </div>
+
+
+
+</section> 
+
 
 {% endblock %}

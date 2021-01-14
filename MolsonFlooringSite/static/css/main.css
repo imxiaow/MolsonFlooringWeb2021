@@ -1,0 +1,10 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+    /*transition: ;*/
+}
+
+body{
+    margin:0;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+}
