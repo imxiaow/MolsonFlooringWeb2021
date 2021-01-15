@@ -8,3 +8,28 @@ body{
     font-family: 'Roboto', sans-serif;
     text-align: center;
 }
+
+
+/*header
+*********************/
+header{
+    background: blue;
+    /*position:absolute;*/
+    margin-top:1em;
+
+}
+
+nav margin
+
+nav li{
+    list-style: none;
+}
+
+nav a{
+    color:white;
+}
+
+
+.unstyled-list{
+    list-style:none;
+}

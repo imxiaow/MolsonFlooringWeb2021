@@ -1,3 +1,16 @@
+* {
+    box-sizing: border-box;
+    /*transition: ;*/
+}
 
 
+.home-landing-sec1{
+    background-color:blue;
+    height:100vh;
+    width:100vw;
+    display:grid;
+}
 
+@media (min-width:48rem){
+
+}
