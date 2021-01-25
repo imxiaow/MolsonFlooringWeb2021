@@ -2,7 +2,7 @@
 
 
 Full stack Web Dev for flooring busniess in Toronto. 
-- http://molsonflooring.com/
+- https://molsonflooring.com/
 
 
 Font-end design inspiration:
