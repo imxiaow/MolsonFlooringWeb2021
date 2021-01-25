@@ -19,10 +19,12 @@ header{
 
 }
 
-nav margin
+nav ul{
+    list-style: none;
+}
 
 nav li{
-    list-style: none;
+    display:inline-block;
 }
 
 nav a{
