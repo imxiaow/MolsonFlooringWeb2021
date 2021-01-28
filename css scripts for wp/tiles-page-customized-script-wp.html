@@ -107,264 +107,287 @@ SOFTWARE.
 
 </main>
 
-
-
 <style>
-.page-content-xw,
-.card-xw,
-.content-xw,
-.title-xw,
-.copy-xw {
-  box-sizing: border-box;
-  display: grid;
-  place-items: center;
-}
-
-.page-content-xw {
-  display: grid;
-  grid-gap: 1rem;
-  padding: 1rem;
-  max-width: 1024px;
-  grid-template-columns: 50% 50%;
-  margin-left:-1.2rem;
-
-}
-
-@media (min-width: 600px) {
-  .page-content-xw {
-    grid-template-columns: 50% 50%;
-  }
-}
-
-@media (min-width: 800px) {
-  .page-content-xw {
-    grid-template-columns: 25% 25% 25% 25%;
-  }
-}
-
-.card-xw {
-  position: relative;
-  display: flex;
-  align-items: flex-end;
-  overflow: hidden;
-  padding: 1rem;
-  width: 100%;
-  text-align: center;
-  color: whitesmoke;
-  background-color: whitesmoke;
-  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1), 0 2px 2px rgba(0, 0, 0, 0.1),
-    0 4px 4px rgba(0, 0, 0, 0.1), 0 8px 8px rgba(0, 0, 0, 0.1),
-    0 16px 16px rgba(0, 0, 0, 0.1);
-  height: 180px;
-}
-
-@media (min-width: 600px) {
-  .card-xw {
-    height: 250px;
-  }
-}
-
-.card-xw:before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 110%;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: 50% 50%;
-  transition: transform calc(700ms * 1.5) cubic-bezier(0.19, 1, 0.22, 1);
-  pointer-events: none;
-}
-
-.card-xw:after {
-  content: "";
-  display: block;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 200%;
-  pointer-events: none;
-  transform: translateY(-50%);
-  transition: transform calc(700ms * 2) cubic-bezier(0.19, 1, 0.22, 1);
-}
-
-.card-xw:nth-child(1):before {
-  background-image: url(https://molsonflooring.com/wp-content/uploads/2021/01/BPCK36008.png);
-}
-
-.card-xw:nth-child(2):before {
-  background-image: url(https://molsonflooring.com/wp-content/uploads/2021/01/BPCK6009.png);
-}
-
-.card-xw:nth-child(3):before {
-  background-image: url(https://molsonflooring.com/wp-content/uploads/2021/01/DM60341.png);
-}
-
-.card-xw:nth-child(4):before {
-  background-image: url(https://molsonflooring.com/wp-content/uploads/2021/01/BPCK36008.png);
-}
-
-.card-xw:nth-child(5):before {
-  background-image: url(https://molsonflooring.com/wp-content/uploads/2021/01/BPCK36009.png);
-}
-
-.card-xw:nth-child(6):before {
-  background-image: url(https://molsonflooring.com/wp-content/uploads/2021/01/DM36341.jpg);
-}
-
-.card-xw:nth-child(7):before {
-  background-image: url(https://molsonflooring.com/wp-content/uploads/2021/01/B360M0633.png);
-}
-
-.card-xw:nth-child(8):before {
-  background-image: url(https://molsonflooring.com/wp-content/uploads/2021/01/RD36320.png);
-}
-
-.content-xw {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 100%;
-  padding: 1rem;
-  transition: transform 700ms cubic-bezier(0.19, 1, 0.22, 1);
-  z-index: 1;
-}
-
-.content-xw > * + * {
-  #margin-top: 1rem;
-}
-
-.title-xw {
-  font-size: 0.85rem;
-  font-weight: normal;
-  line-height: 0;
-  color: #575859;
-  #position: absolute;
-  #top: calc(50% - 24px); //24px is font size of H1 I assume
-  #left: 0;
-  #text-align: center;
-}
-.copy-xw {
-  color: #575859;
-  font-size: 0.85rem;
-}
-
-@media (min-width: 600px) {
-  .title-xw {
-    #visibility: visible;
-    font-size: 1.1rem;
-    line-height: 1.2;
-  }
+  .page-content-xw,
+  .card-xw,
+  .content-xw,
+  .title-xw,
   .copy-xw {
-    font-size: 1rem;
+    box-sizing: border-box;
+    display: grid;
+    place-items: center;
   }
-}
 
-.btn-xw {
-  cursor: pointer;
-  margin-top: 1rem;
-  padding: 0.75rem 1.5rem;
-  font-size: 0.7rem;
-  letter-spacing: 0.025rem;
-  text-transform: uppercase;
-  color: white;
-  background-color: black;
-  border: none;
-  display: none;
-}
+  .page-content-xw {
+    display: grid;
+    grid-gap: 1rem;
+    padding: 1rem;
+    max-width: 1024px;
+    grid-template-columns: 50% 50%;
+    margin-left: -1.2rem;
 
-@media (min-width: 600px) {
-  .btn-xw {
-    #display: unset;
   }
-}
-.btn-xw:hover {
-  background-color: #666666;
-}
 
-.btn-xw:focus {
-  outline: 1px dashed white;
-  outline-offset: 3px;
-}
+  @media (min-width: 600px) {
+    .page-content-xw {
+      grid-template-columns: 50% 50%;
+    }
+  }
 
-@media (hover: hover) and (min-width: 600px) {
+  @media (min-width: 800px) {
+    .page-content-xw {
+      grid-template-columns: 25% 25% 25% 25%;
+    }
+  }
+
+  .card-xw {
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    overflow: hidden;
+    padding: 1rem;
+    width: 100%;
+    text-align: center;
+    color: whitesmoke;
+    background-color: whitesmoke;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1), 0 2px 2px rgba(0, 0, 0, 0.1),
+      0 4px 4px rgba(0, 0, 0, 0.1), 0 8px 8px rgba(0, 0, 0, 0.1),
+      0 16px 16px rgba(0, 0, 0, 0.1);
+    height: 180px;
+  }
+
+  @media (min-width: 600px) {
+    .card-xw {
+      height: 250px;
+    }
+  }
+
+  .card-xw:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 110%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    transition: transform calc(700ms * 1.5) cubic-bezier(0.19, 1, 0.22, 1);
+    pointer-events: none;
+  }
+
   .card-xw:after {
-    transform: translateY(0);
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 200%;
+    pointer-events: none;
+    transform: translateY(-50%);
+    transition: transform calc(700ms * 2) cubic-bezier(0.19, 1, 0.22, 1);
+  }
+
+  .card-xw:nth-child(1):before {
+    background-image: url(https://molsonflooring.com/wp-content/uploads/2021/01/BPCK36008.png);
+  }
+
+  .card-xw:nth-child(2):before {
+    background-image: url(https://molsonflooring.com/wp-content/uploads/2021/01/BPCK6009.png);
+  }
+
+  .card-xw:nth-child(3):before {
+    background-image: url(https://molsonflooring.com/wp-content/uploads/2021/01/DM60341.png);
+  }
+
+  .card-xw:nth-child(4):before {
+    background-image: url(https://molsonflooring.com/wp-content/uploads/2021/01/BPCK36008.png);
+  }
+
+  .card-xw:nth-child(5):before {
+    background-image: url(https://molsonflooring.com/wp-content/uploads/2021/01/BPCK36009.png);
+  }
+
+  .card-xw:nth-child(6):before {
+    background-image: url(https://molsonflooring.com/wp-content/uploads/2021/01/DM36341.jpg);
+  }
+
+  .card-xw:nth-child(7):before {
+    background-image: url(https://molsonflooring.com/wp-content/uploads/2021/01/B360M0633.png);
+  }
+
+  .card-xw:nth-child(8):before {
+    background-image: url(https://molsonflooring.com/wp-content/uploads/2021/01/RD36320.png);
   }
 
   .content-xw {
-    transform: translateY(calc(100% - 4.5rem));
-  }
-
-  .content-xw > *:not(.title-xw) {
-    opacity: 0;
-    transform: translateY(1rem);
-    transition: transform 700ms cubic-bezier(0.19, 1, 0.22, 1),
-      opacity 700ms cubic-bezier(0.19, 1, 0.22, 1);
-  }
-
-  .card-xw:hover,
-  .card-xw:focus-within {
+    position: relative;
+    display: flex;
+    flex-direction: column;
     align-items: center;
+    width: 100%;
+    padding: 1rem;
+    transition: transform 700ms cubic-bezier(0.19, 1, 0.22, 1);
+    z-index: 1;
   }
 
-  .card-xw:hover:before,
-  .card-xw:focus-within:before {
-    transform: translateY(-4%);
+  .content-xw>*+* {
+    #margin-top: 1rem;
   }
 
-  .card-xw:hover:after,
-  .card-xw:focus-within:after {
-    transform: translateY(-50%);
+  .title-xw {
+    font-size: 0.85rem;
+    font-weight: normal;
+    line-height: 0;
+    color: #575859;
+    #position: absolute;
+    #top: calc(50% - 24px); //24px is font size of H1 I assume
+    #left: 0;
+    #text-align: center;
   }
 
-  .card-xw:hover .content-xw,
-  .card-xw:focus-within .content-xw {
-    transform: translateY(0);
+  .copy-xw {
+    color: #575859;
+    font-size: 0.85rem;
   }
 
-  .card-xw:hover .content-xw > *:not(.title-xw),
-  .card-xw:focus-within .content-xw > *:not(.title-xw) {
-    opacity: 1;
-    transform: translateY(0);
-    transition-delay: calc(700ms / 8);
+  @media (min-width: 600px) {
+    .title-xw {
+      #visibility: visible;
+      font-size: 1.1rem;
+      line-height: 1.2;
+    }
+
+    .copy-xw {
+      font-size: 1rem;
+    }
   }
 
-  .card-xw:focus-within:before,
-  .card-xw:focus-within:after,
-  .card-xw:focus-within .content,
-  .card-xw:focus-within .content > *:not(.title-xw) {
-    transition-duration: 0s;
+  .btn-xw {
+    cursor: pointer;
+    margin-top: 1rem;
+    padding: 0.75rem 1.5rem;
+    font-size: 0.7rem;
+    letter-spacing: 0.025rem;
+    text-transform: uppercase;
+    color: white;
+    background-color: black;
+    border: none;
+    display: none;
   }
 
-  .entry-title{
-    display:none;
+  @media (min-width: 600px) {
+    .btn-xw {
+      #display: unset;
+    }
   }
 
-@media (min-width: 600px) {
-  .entry-title {
-    margin-left:0.5;
-    color:blue;
-    font-size:1.5rem;
-    text-transform: capitalize;
-    display:none;
+  .btn-xw:hover {
+    background-color: #666666;
   }
-  .site-inner {
-    place-items: center;
-    margin:0;
-    #padding-left: 0;
-  }
-  .entry-content{
-    place-items: center;
-    margin-left:-0.5;
-  }
-  
-}
 
+  .btn-xw:focus {
+    outline: 1px dashed white;
+    outline-offset: 3px;
+  }
+
+  @media (hover: hover) and (min-width: 600px) {
+    .card-xw:after {
+      transform: translateY(0);
+    }
+
+    .content-xw {
+      transform: translateY(calc(100% - 4.5rem));
+    }
+
+    .content-xw>*:not(.title-xw) {
+      opacity: 0;
+      transform: translateY(1rem);
+      transition: transform 700ms cubic-bezier(0.19, 1, 0.22, 1),
+        opacity 700ms cubic-bezier(0.19, 1, 0.22, 1);
+    }
+
+    .card-xw:hover,
+    .card-xw:focus-within {
+      align-items: center;
+    }
+
+    .card-xw:hover:before,
+    .card-xw:focus-within:before {
+      transform: translateY(-4%);
+    }
+
+    .card-xw:hover:after,
+    .card-xw:focus-within:after {
+      transform: translateY(-50%);
+    }
+
+    .card-xw:hover .content-xw,
+    .card-xw:focus-within .content-xw {
+      transform: translateY(0);
+    }
+
+    .card-xw:hover .content-xw>*:not(.title-xw),
+    .card-xw:focus-within .content-xw>*:not(.title-xw) {
+      opacity: 1;
+      transform: translateY(0);
+      transition-delay: calc(700ms / 8);
+    }
+
+    .card-xw:focus-within:before,
+    .card-xw:focus-within:after,
+    .card-xw:focus-within .content,
+    .card-xw:focus-within .content>*:not(.title-xw) {
+      transition-duration: 0s;
+    }
+
+    .entry-header .entry-title {
+      display: none;
+    }
+
+    .entry-header {
+      display: none;
+    }
+
+    .entry-title {
+      display: none;
+    }
+
+   @media only screen and (max-width: 500px) {
+
+      .entry-title {
+        /* font-size: 24px; */
+        display: none;
+      }
+
+      .content .entry-header .entry-meta .entry-comments-link {
+        display: none;
+      }
+
+    }
+
+    @media (min-width: 600px) {
+      .entry-title {
+        margin-left: 0.5;
+        color: blue;
+        font-size: 1.5rem;
+        text-transform: capitalize;
+        display: none;
+      }
+
+      .site-inner {
+        place-items: center;
+        margin: 0;
+        #padding-left: 0;
+      }
+
+      .entry-content {
+        place-items: center;
+        margin-left: -0.5;
+      }
+
+    }
 </style>
 
 <!-- Author Name : Xiao Wang
