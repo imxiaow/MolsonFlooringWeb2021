@@ -1,0 +1,269 @@
+<!-- Author Name : Xiao Wang
+     Author email: xiaow.wang@mail.utoronto.ca
+      Author URL: https://imxiaow.github.io/
+
+MIT License
+
+Copyright (c) 2021 Xiao Wang
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+-->
+
+<div class="service-area-container">
+  <div id="left-text-area">
+    <h1>Choose the best <br>service.</h1>
+  </div>
+
+  <div id="right-ser-area">
+    <div class="container-xw">
+
+      <div class="gallery-xw">
+
+        <div class="gallery-item-xw">
+          <a href="https://molsonflooring.com/contact-us/"><img class="gallery-image-xw" src="https://molsonflooring.com/wp-content/uploads/2021/02/Group-63.png" alt=""></a>
+        </div>
+
+        <div class="gallery-item-xw">
+           <a href="https://molsonflooring.com/gallery/"><img class="gallery-image-xw" src="https://molsonflooring.com/wp-content/uploads/2021/02/Group-64.png" alt=""></a>
+        </div>
+
+        <div class="gallery-item-xw">
+           <a href="https://molsonflooring.com/gallery/"><img class="gallery-image-xw" src="https://molsonflooring.com/wp-content/uploads/2021/02/Group-65.png" alt=""></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<style>
+
+  .service-area-container {
+    margin-top:0rem;
+    display: grid;
+    height: 90vh;
+    grid-template-columns: 100%;
+    grid-template-rows: 100%;
+    grid-template-areas: "rightserarea";
+    grid-gap: 0.2rem;
+    color: black;
+    text-align: center;
+    max-width: 1024px;
+  }
+
+  #left-text-area{
+    display:none;
+  }
+  #right-ser-area {
+    grid-area: rightserarea;
+    padding: 0;
+    place-items: center;
+    align-items: center; 
+    max-width: 512px;
+  }
+
+  .container-xw,
+  .gallery-xw,
+  .gallery-item-xw,
+  .container-xw::before,
+  .gallery-xw::before,
+  .gallery-item-xw::before,
+  .container-xw::after,
+  .gallery-xw::after,
+  .gallery-item-xw::after {
+    box-sizing: border-box;
+  }
+
+  .container-xw {
+    max-width: 20rem;
+    margin-top:25%;
+    place-items: center;
+    align-items: center;
+  }
+
+  .gallery-xw {
+    display: flex;
+    flex-wrap: wrap;
+    /* Compensate for excess margin on outer gallery flex items */
+    margin: -1rem -1rem;
+  }
+
+  .gallery-item-xw {
+    /* Minimum width of 24rem and grow to fit available space */
+    flex: 1 0 20rem;
+    /* Margin value should be half of grid-gap value as margins on flex items don't collapse */
+    margin: 2rem;
+    box-shadow: 0.3rem 0.4rem 0.4rem rgba(0, 0, 0, 0.4);
+    overflow: hidden;
+    padding:0;
+  }
+
+  .gallery-image-xw {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 400ms ease-out;
+  }
+
+  .gallery-image-xw:hover {
+    transform: scale(1.15);
+  }
+
+  @supports (display: grid) {
+    .gallery-xw {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(18rem, 100%));
+      grid-gap: 2rem;
+    }
+
+    .gallery-xw,
+    .gallery-item-xw {
+      margin: 0;
+    }
+  }
+
+
+  @media (min-width: 600px) {
+    .service-area-container {
+      margin-top:2rem;
+      display: grid;
+      height: 90vh;
+      grid-template-columns: 50% 50%;
+      grid-template-rows: 100%;
+      grid-template-areas: "lefttextarea rightserarea";
+      grid-gap: 0.2rem;
+      text-align: center;
+      max-width: 1024px;
+      margin-left:4rem;
+
+    }
+
+    #right-ser-area {
+      grid-area: rightserarea;
+      padding: 0;
+      place-items: center;
+      align-items: center; 
+      max-width: 512px;
+      max-height:100vh;
+      position:relative;
+    }
+
+
+    #left-text-area {
+      display: unset;
+      grid-area: lefttextarea;
+      background-image: url(https://molsonflooring.com/wp-content/uploads/2021/01/services_backg-scaled.jpg);
+      background-position: center; /* Center the image */
+      background-repeat: no-repeat; /* Do not repeat the image */
+      background-size: cover;
+    }
+
+    #left-text-area h1 {
+      grid-area: lefttextarea;
+      color: white;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 48px;
+      line-height: 55px;
+      display: inline-block;
+      align-items: right;
+      text-align: right;
+      position: relative;
+      right: -5%;
+      top: 35%;
+    }
+    .gallery-xw {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(18rem, 100%));
+      margin:10%;
+      grid-gap: 2rem;
+      max-height: 65%;
+    }
+    
+    .container-xw {
+      max-width: 22rem;
+      margin:10%;
+      position:relative;
+      place-items: center;
+      align-items: center;
+      max-height:65%;
+    }
+      .entry-header .entry-title {
+      display: none;
+    }
+
+    .entry-header {
+      display: none;
+    }
+
+    .entry-title {
+      display: none;
+    }
+
+    @media only screen and (max-width: 500px) {
+
+      .entry-title {
+        /* font-size: 24px; */
+        display: none;
+      }
+
+      .content .entry-header .entry-meta .entry-comments-link {
+        display: none;
+      }
+
+    }
+
+    @media (min-width: 600px) {
+      .entry-title {
+        margin-left: 0.5;
+        color: blue;
+        font-size: 1.5rem;
+        text-transform: capitalize;
+        display: none;
+      }
+
+      .site-inner {
+        place-items: center;
+        margin: 0;
+        #padding-left: 0;
+      }
+
+      .entry-content {
+        place-items: center;
+        margin-left: -0.5;
+      }
+
+    }
+  }
+
+
+
+
+
+
+
+</style>
+<!-- Author Name : Xiao Wang
+     Author email: xiaow.wang@mail.utoronto.ca
+      Author URL: https://imxiaow.github.io/
+
+MIT License
+
+Copyright (c) 2021 Xiao Wang
+-->
