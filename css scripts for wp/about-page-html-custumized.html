@@ -1,0 +1,157 @@
+<!-- Author Name : Xiao Wang
+     Author email: xiaow.wang@mail.utoronto.ca
+      Author URL: https://imxiaow.github.io/
+
+MIT License
+
+Copyright (c) 2021 Xiao Wang
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+-->
+
+
+<div class="container-xw">
+
+  <div class="gallery-xw">
+
+    <div class="gallery-item-xw">
+      <a href="https://molsonflooring.com/wp-content/uploads/2021/02/文件_001-scaled.jpg"><img class="gallery-image-xw" src="https://molsonflooring.com/wp-content/uploads/2021/02/文件_001-scaled.jpg" alt=""></a>
+    </div>
+
+    <div class="gallery-item-xw">
+      <a href="https://molsonflooring.com/wp-content/uploads/2021/02/文件_027-scaled.jpg"><img class="gallery-image-xw" src="https://molsonflooring.com/wp-content/uploads/2021/02/文件_027-scaled.jpg" alt=""></a>
+    </div>
+
+    <div class="gallery-item-xw">
+      <a href="https://molsonflooring.com/wp-content/uploads/2021/02/文件_007-scaled.jpg"><img class="gallery-image-xw" src="https://molsonflooring.com/wp-content/uploads/2021/02/文件_007-scaled.jpg" alt=""></a>
+    </div>
+
+    <div class="gallery-item-xw">
+      <a href="https://molsonflooring.com/wp-content/uploads/2021/02/文件_005-scaled.jpg"><img class="gallery-image-xw" src="https://molsonflooring.com/wp-content/uploads/2021/02/文件_005-scaled.jpg" alt=""></a>
+    </div>
+
+    <div class="gallery-item-xw">
+      <a href="https://molsonflooring.com/wp-content/uploads/2021/02/文件_026.jpg"><img class="gallery-image-xw" src="https://molsonflooring.com/wp-content/uploads/2021/02/文件_026.jpg" alt=""></a>
+    </div>
+
+    <div class="gallery-item-xw">
+      <a href="https://molsonflooring.com/wp-content/uploads/2021/02/文件_040-scaled.jpg"><img class="gallery-image-xw" src="https://molsonflooring.com/wp-content/uploads/2021/02/文件_040-scaled.jpg" alt=""></a>
+    </div>
+
+  </div>
+
+</div>
+
+
+
+<style>
+@import url(https://fonts.googleapis.com/css?family=Montserrat:500);
+
+:root{
+  /* Base font size */
+  font-size: 11px;
+}
+
+.container-xw,
+.gallery-xw,
+.gallery-item-xw,
+.container-xw::before,
+.gallery-xw::before,
+.gallery-item-xw::before,
+.container-xw::after,
+.gallery-xw::after,
+.gallery-item-xw::after {
+  box-sizing: border-box;
+}
+
+.container-xw {
+  max-width: 100rem;
+  margin: 0 auto;
+  padding: 0 2rem 2rem;
+}
+
+.gallery-xw {
+  display: flex;
+  flex-wrap: wrap;
+  /* Compensate for excess margin on outer gallery flex items */
+  margin: -1rem -1rem;
+}
+
+.gallery-item-xw {
+  /* Minimum width of 24rem and grow to fit available space */
+  flex: 1 0 24rem;
+  /* Margin value should be half of grid-gap value as margins on flex items don't collapse */
+  margin: 1rem;
+  box-shadow: 0.3rem 0.4rem 0.4rem rgba(0, 0, 0, 0.4);
+  overflow: hidden;
+}
+
+.gallery-image-xw {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 400ms ease-out;
+}
+
+.gallery-image-xw:hover {
+  transform: scale(1.15);
+}
+
+@supports (display: grid) {
+  .gallery-xw {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(24rem, 1fr));
+    grid-gap: 2rem;
+  }
+
+  .gallery-xw,
+  .gallery-item-xw {
+    margin: 0;
+  }
+}
+
+</style>
+
+<!-- Author Name : Xiao Wang
+     Author email: xiaow.wang@mail.utoronto.ca
+      Author URL: https://imxiaow.github.io/
+
+MIT License
+
+Copyright (c) 2021 Xiao Wang
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+-->
