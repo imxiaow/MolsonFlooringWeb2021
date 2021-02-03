@@ -1,0 +1,311 @@
+<!-- Author Name : Xiao Wang
+     Author email: xiaow.wang@mail.utoronto.ca
+      Author URL: https://imxiaow.github.io/
+
+MIT License
+
+Copyright (c) 2021 Xiao Wang
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+-->
+
+<main class="page-content-xw">
+
+  <div class="card-xw">
+    <div class="content-xw">
+      <h2 class="title-xw">Tongue and Groove (T&G) </h2>
+      <a href="https://molsonflooring.com/tandgenghardwood/"><button class="btn-xw">See more</button></a>
+    </div>
+  </div>
+  <div class="card-xw">
+    <div class="content-xw">
+      <h2 class="title-xw">Click</h2>
+      <a href="https://molsonflooring.com/clickenghardwood/"><button class="btn-xw">See more</button></a>
+    </div>
+  </div>
+
+</main>
+
+<style>
+
+
+  .page-content-xw,
+  .card-xw,
+  .content-xw,
+  .title-xw,
+  .copy-xw {
+    box-sizing: border-box;
+    display: grid;
+    place-items: center;
+  }
+
+  .page-content-xw {
+    display: grid;
+    grid-gap: 5rem;
+    padding: 0.8rem;
+    max-width: 1024px;
+    margin-left:0rem;
+    
+  }
+
+  @media (min-width: 600px) {
+    .page-content-xw {
+      grid-template-columns: 50% 50%;
+      padding: 3rem;
+      place-items: center;
+      margin-left:-3em;
+    }
+  }
+
+  @media (min-width: 800px) {
+    .page-content-xw {
+      grid-template-columns: 50% 50%;
+      padding: 3rem;
+      place-items: center;
+      margin-left:-3em;
+    }
+  }
+
+  .card-xw {
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    overflow: hidden;
+    padding: 1rem;
+    width: 100%;
+    text-align: center;
+    color: whitesmoke;
+    background-color: white;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1), 0 2px 2px rgba(0, 0, 0, 0.1),
+      0 4px 4px rgba(0, 0, 0, 0.1), 0 8px 8px rgba(0, 0, 0, 0.1),
+      0 16px 16px rgba(0, 0, 0, 0.1);
+
+  }
+
+  @media (min-width: 600px) {
+    .card-xw {
+      height: 350px;
+    }
+  }
+
+  .card-xw:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 110%;
+    background-size: 400px;
+    background-repeat: no-repeat;
+    background-position: 50% 30%;
+    transition: transform calc(700ms * 1.5) cubic-bezier(0.19, 1, 0.22, 1);
+    pointer-events: none;
+  }
+
+  .card-xw:after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 200%;
+    pointer-events: none;
+    background-image: linear-gradient(to bottom,
+        rgba(255,255,255, 0) 0%,
+        rgba(255,255,255, 0.009) 11.7%,
+        rgba(255,255,255, 0.034) 22.1%,
+        rgba(255,255,255,0.072) 31.2%,
+        rgba(255,255,255, 0.123) 39.4%,
+        rgba(255,255,255, 0.182) 46.6%,
+        rgba(255,255,255, 0.249) 53.1%,
+        rgba(255,255,255, 0.32) 58.9%,
+        rgba(255,255,255, 0.394) 64.3%,
+        rgba(255,255,255, 0.468) 69.3%,
+        rgba(255,255,255, 0.54) 74.1%,
+        rgba(255,255,255, 0.5) 78.8%,
+        rgba(255,255,255, 0.5) 83.6%,
+        rgba(255,255,255, 0.5) 88.7%,
+        rgba(255,255,255, 0.5) 94.1%,
+        rgba(255,255,255, 0.5) 100%);
+    transform: translateY(-50%);
+    transition: transform calc(var(--d) * 2) var(--e);
+  }
+
+  .card-xw:nth-child(1):before {
+    background-image: url(https://molsonflooring.com/wp-content/uploads/2021/02/TGCs2.jpg);
+  }
+
+  .card-xw:nth-child(2):before {
+    background-image: url(https://molsonflooring.com/wp-content/uploads/2021/02/TGCK.jpg);
+  }
+
+  .content-xw {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 1rem;
+    transition: transform 700ms cubic-bezier(0.19, 1, 0.22, 1);
+    z-index: 1;
+    margin-top:0rem;
+  }
+
+  .content-xw>*+* {
+    margin-top: 0rem;
+  }
+
+  .title-xw {
+    font-size: 1.2rem;
+    line-height: 1.2;
+    font-weight: bold;
+    color: #575859;
+    text-align: left;
+    background:rgba(255,255,255, 0.9);
+  }
+
+  @media(min-width: 600px){
+    .title-xw {
+      font-size: 1.5rem;
+      padding:1.5rem;
+      margin-top:-0.25rem;
+      line-height:1.5rem;
+    }
+  }
+
+
+  .btn-xw {
+    cursor: pointer;
+    margin-top: 0.5rem;
+    padding: 0.75rem 1.5rem;
+    font-size: 0.7rem;
+    letter-spacing: 0.025rem;
+    text-transform: uppercase;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.8);
+    border: none;
+  }
+
+  .btn-xw:hover {
+    background-color: #666666;
+  }
+
+  .btn-xw:focus {
+    outline: 1px dashed white;
+    outline-offset: 3px;
+  }
+
+  @media (hover: hover) and (min-width: 600px) {
+    .card-xw:after {
+      transform: translateY(0);
+    }
+
+    .content-xw {
+      transform: translateY(calc(100% - 6.5rem));
+    }
+
+    .content-xw>*:not(.title-xw) {
+      opacity: 0;
+      transform: translateY(1rem);
+      transition: transform 700ms cubic-bezier(0.19, 1, 0.22, 1), opacity 700ms cubic-bezier(0.19, 1, 0.22, 1);
+    }
+
+    .card-xw:hover,
+    .card-xw:focus-within {
+      align-items: center;
+    }
+
+    .card-xw:hover:before,
+    .card-xw:focus-within:before {
+      transform: translateY(-4%);
+    }
+
+    .card-xw:hover:after,
+    .card-xw:focus-within:after {
+      transform: translateY(-50%);
+    }
+
+    .card-xw:hover .content-xw,
+    .card-xw:focus-within .content-xw {
+      transform: translateY(0);
+    }
+
+    .card-xw:hover .content-xw>*:not(.title-xw),
+    .card-xw:focus-within .content-xw>*:not(.title-xw) {
+      opacity: 1;
+      transform: translateY(0);
+      transition-delay: calc(700ms / 8);
+    }
+
+    .card-xw:focus-within:before,
+    .card-xw:focus-within:after,
+    .card-xw:focus-within .content,
+    .card-xw:focus-within .content>*:not(.title-xw) {
+      transition-duration: 0s;
+    }
+
+    .entry-header .entry-title {
+      display: none;
+    }
+
+    .entry-header {
+      display: none;
+    }
+
+    .entry-title {
+      display: none;
+    }
+  }
+
+   @media only screen and (max-width: 500px) {
+
+      .entry-title {
+        /* font-size: 24px; */
+        display: none;
+      }
+
+      .content .entry-header .entry-meta .entry-comments-link {
+        display: none;
+      }
+
+    }
+
+    @media (min-width: 600px) {
+      .entry-title {
+        margin-left: 0.5;
+        color: blue;
+        font-size: 1.5rem;
+        text-transform: capitalize;
+        display: none;
+      }
+
+      .site-inner {
+        place-items: center;
+        margin: 0;
+        #padding-left: 0;
+      }
+
+      .entry-content {
+        place-items: center;
+        margin-left: -0.5;
+      }
+
+    }
+</style>
