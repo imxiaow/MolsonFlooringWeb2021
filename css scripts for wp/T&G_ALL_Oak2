@@ -316,7 +316,10 @@ h1{
     margin-left: 0;
   }
   .entry-content ol, .entry-content p, .entry-content ul, .quote-caption {
-    margin-bottom: 0;
+    margin-bottom: 26px;
+  }
+  .entry-content ul{
+    margin-bottom:0px;
   }
 
 
